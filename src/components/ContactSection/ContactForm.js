@@ -1,0 +1,124 @@
+import React, { Component, useRef } from "react";
+import emailjs from 'emailjs-com';
+
+
+class ContactForm extends Component {
+
+  constructor(props) {
+    super(props)
+    this.myForm = React.createRef()
+  }
+
+  state = {
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  }
+
+  changHandler = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+  submitHangler = (event) => {
+    const emailTemplate = {
+      from_name: this.state.name,
+      to_name: "Olive",
+      message: "From landing page form:" + this.state.message,
+      reply_to: this.state.email
+    }
+    emailjs.send(
+      'service_3ol7b27',
+      'template_y8dubto',
+      emailTemplate,
+      'user_WsA2bhQmjJ27ZcQjxdPme'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+    event.preventDefault();
+    this.myForm.current.reset()
+    this.setState({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    })
+  }
+
+  render() {
+    return (
+      <div className="contact-box text-center">
+        <form
+          ref={this.myForm}
+          onSubmit={this.submitHangler}
+          className="contact-form"
+          noValidate="novalidate"
+        >
+          <div className="row">
+            <div className="col-12">
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="name"
+                  placeholder="Name"
+                  required="required"
+                  onChange={this.changHandler}
+                  value={this.state.name}
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  className="form-control"
+                  name="email"
+                  placeholder="Email"
+                  required="required"
+                  onChange={this.changHandler}
+                  value={this.state.email}
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="subject"
+                  placeholder="Subject"
+                  required="required"
+                  onChange={this.changHandler}
+                  value={this.state.subject}
+                />
+              </div>
+            </div>
+            <div className="col-12">
+              <div className="form-group">
+                <textarea
+                  className="form-control"
+                  name="message"
+                  placeholder="Message"
+                  required="required"
+                  onChange={this.changHandler}
+                  value={this.state.message}
+                />
+              </div>
+            </div>
+            <div className="col-12">
+              <button
+                type="submit"
+                className="btn btn-lg btn-block mt-3"><span className="text-white pr-3"><i className="fas fa-paper-plane" /></span>
+                Send Message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    );
+  }
+}
+
+export default ContactForm;
