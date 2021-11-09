@@ -834,7 +834,7 @@ img {
 }
 
 .navbar-dark.navbar-sticky-on .navbar-nav .nav-link {
-    color: #7e8085;
+    color: #fff;
 }
 
 [data-theme=dark] .navbar-dark.navbar-sticky-on .navbar-nav .nav-link {
@@ -1314,6 +1314,7 @@ img {
     bottom: -40px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    opacity: 0;
 }
 
 .slick-dots li button {
@@ -1327,6 +1328,7 @@ img {
     margin: 5px;
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
+    opacity: 0;
 }
 
 .slick-dots .slick-active button,

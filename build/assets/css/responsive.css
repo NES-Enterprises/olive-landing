@@ -360,9 +360,14 @@
     .navbar-toggler-icon {
         height: 3px;
         width: 50%;
-        background: #7e8085;
+        background: #fff;
         display: inline-block;
     }
+
+    .navbar-dark.navbar-sticky-on .navbar-nav .nav-link {
+        background: #7e8085;
+    }
+
 
     .navbar-dark .navbar-toggler-icon {
         background: #fff;
@@ -380,7 +385,7 @@
     .navbar-toggler-icon:before,
     .navbar-toggler-icon:after {
         content: "";
-        background: #7e8085;
+        background: #fff;
         left: 0;
         height: 100%;
         width: 100%;
@@ -389,7 +394,7 @@
 
     .navbar-dark .navbar-toggler-icon:before,
     .navbar-dark .navbar-toggler-icon:after {
-        background: #7e8085;
+        background: #fff;
     }
 
     .navbar-sticky-on .navbar-toggler-icon:before,

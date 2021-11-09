@@ -7,11 +7,11 @@ class Header extends Component {
                 <div className="container position-relative">
                     <a className="navbar-brand" href="/">
                         <img className="navbar-brand-regular" src={this.props.imageData} alt="brand-logo" />
-                        <img className="navbar-brand-sticky" src="/img/logo-header-white.svg" alt="sticky brand-logo" />
+                        <img className="navbar-brand-sticky" src="/img/logo-header.svg" alt="sticky brand-logo" />
                     </a>
-                    <button className="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                    {/* <button className="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
-                    </button>
+                    </button> */}
                     <div className="navbar-inner">
                         {/*  Mobile Menu Toggler */}
                         <button className="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">

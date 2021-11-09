@@ -9,7 +9,7 @@ class FeatureSection extends Component {
             "preHeading": "Olive",
             "preHeadingspan": "Features",
             "heading": "3 Easy Steps",
-            "headingText": "Organizing your next gifting event is only a few taps away. Whether you have a last second family Christmas part, a work gift exchange, or a friendsmas, Olive will do all the heavy lifting for you.",
+            "headingText": "Organizing your next gifting event is only a few taps away. Whether you have a last second family Christmas party, a work gift exchange, or a friendsmas, Olive will do all the heavy lifting for you.",
             "headingTextTwo": "",
 
 
@@ -19,7 +19,7 @@ class FeatureSection extends Component {
                 "id": 1,
                 "image": "/img/wishlist.svg",
                 "title": "Wishlists",
-                "text": "Create your personal wishlist within the app. Share it with an event so others can see and claim items off your wishlist. View what you have to shop for in your shopping list."
+                "text": "Create your personal wishlist and add your dream items. Share it with an event so others' can see and claim items off your wishlist. View what you have to shop for in your shopping list.."
             },
             {
                 "id": 2,
@@ -30,8 +30,8 @@ class FeatureSection extends Component {
             {
                 "id": 3,
                 "image": "/img/featured_image_3.png",
-                "title": "Anonymous and Secret",
-                "text": "We want to keep your gifting experience special, so when you claim an item off of somebody’s wishlist, we never notify the owner. Only others gift seekers in your event will see you have claimed the item."
+                "title": "Keep it secret",
+                "text": "We want to keep your gifting experience special, so when you claim an item off of somebody’s wishlist, we never notify the owner. Only other gift seekers in your event will see you have claimed the item."
             }
         ]
     }

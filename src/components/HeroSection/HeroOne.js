@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 const initData = {
     heading: "The easiest way to organize gifting events",
-    content: "Get the ones your care about only what they care about. Create a gifting event and invite all your friends and family in under 5 minutes. Claim items from other wishlists with secrecy, as the wishlist owner will never find out until you give them the gift. Gone are the days of everybody getting grandma the same thing on her list.",
+    content: "Gift the perfect items to the people you care about… every time, or get the gift you have always wanted by adding items to your wishlist. Create a gifting event and invite all your friends & family in less than 5 minutes. Claim gifts from others' with complete secrecy, leaving the surprise for when the gift gets opened. No more duplicate gifts or gift cards as a panic gift.",
     headingSlug: "* Available on iPhone & iPad and coming to Android late 2021",
     playImg: "/img/google-play.png",
     appleImg: "/img/app-store.png",
-    heroThumb: "/img/home_mockup.svg"
+    heroThumb: "/img/home_mockup.png"
 }
 
 class HeroSection extends Component {

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 
 // importing all the themes
 import ThemeOne from "../themes/theme-one";
@@ -31,7 +31,7 @@ class MyRouts extends React.Component {
   render() {
     return (
       <div>
-        <Router>
+        <BrowserRouter>
           <Switch>
             <Route exact path="/" component={ThemeOne} />
             <Route path="/theme-two" component={ThemeTwo} />
@@ -58,7 +58,7 @@ class MyRouts extends React.Component {
             <Route path="/error-page" component={ErrorPage} />
             <Route path="/contact-page" component={ContactPage} />
           </Switch>
-        </Router>
+        </BrowserRouter>
       </div>
     );
   }

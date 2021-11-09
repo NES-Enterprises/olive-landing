@@ -27,7 +27,7 @@ class ThemeOne extends Component {
                 </div>
                 {/*====== Scroll To Top Area End ======*/}
                 <div className="main">
-                    <Header imageData={"/img/logo-header-white.svg"} />
+                    <Header imageData={"/img/logo-header.svg"} />
                     <HeroSection />
                     {/* <Counter /> */}
                     <ScreenshotSection />

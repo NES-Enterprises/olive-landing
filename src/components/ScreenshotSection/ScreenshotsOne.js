@@ -11,16 +11,16 @@ const initData = {
 
 const data = [
     {
-        image: "/img/screenshot_1.svg"
+        image: "/img/screenshot_1.png"
     },
     {
-        image: "/img/screenshot_2.svg"
+        image: "/img/screenshot_2.png"
     },
     {
-        image: "/img/screenshot_3.svg"
+        image: "/img/screenshot_3.png"
     },
     {
-        image: "/img/screenshot_4.svg"
+        image: "/img/screenshot_4.png"
     },
 ]
 
