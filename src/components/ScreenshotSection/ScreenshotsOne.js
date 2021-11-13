@@ -5,8 +5,8 @@ const initData = {
     preHeading: "Simple",
     preHeadingspan: "Gifting",
     heading: "It's gifting, not guesswork",
-    headingText: "Olive has all the tools you need to oranize your next gifting event. Spend less time figuring out your shopping list, and more time with the people you love.",
-    headingTexttwo: "Olive has all the tools you need to oranize your next gifting event. Spend less time figuring out your shopping list, and more time with the people you love."
+    headingText: "Olive has all the tools you need to organize your next gifting event. Spend less time figuring out your shopping list, and more time with the people you love.",
+    headingTexttwo: "Olive has all the tools you need to organize your next gifting event. Spend less time figuring out your shopping list, and more time with the people you love."
 }
 
 const data = [
