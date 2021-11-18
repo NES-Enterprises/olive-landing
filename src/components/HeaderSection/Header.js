@@ -136,6 +136,9 @@ class Header extends Component {
                                 <li className="nav-item">
                                     <a className="nav-link scroll" href="#contact">Contact</a>
                                 </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="https://blog.olivegifting.com/">Blog</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>

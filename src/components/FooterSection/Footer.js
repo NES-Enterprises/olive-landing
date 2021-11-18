@@ -28,15 +28,18 @@ class FooterSection extends Component {
         footerList_2: [
             {
                 "id": 2,
-                "text": "Privacy Policy"
-            },
-            {
-                "id": 3,
-                "text": "Support"
+                "text": "Privacy Policy",
+                "url": " https://olive-gifting.flycricket.io/privacy.html"
             },
             {
                 "id": 4,
-                "text": "Terms & Conditions"
+                "text": "Terms & Conditions",
+                "url": " https://olive-gifting.flycricket.io/terms.html"
+            },
+            {
+                "id": 3,
+                "text": "Blog",
+                "url": " https://blog.olivegifting.com/"
             },
         ],
         footerList_3: [
@@ -91,7 +94,7 @@ class FooterSection extends Component {
                                         <ul>
                                             {this.state.footerList_2.map((item, idx) => {
                                                 return (
-                                                    <li key={`flt_${idx}`} className="py-2"><a href="/#">{item.text}</a></li>
+                                                    <li key={`flt_${idx}`} className="py-2"><a href={item.url}>{item.text}</a></li>
                                                 );
                                             })}
                                         </ul>
